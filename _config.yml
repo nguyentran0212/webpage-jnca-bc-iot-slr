@@ -1,0 +1,22 @@
+# Site identity
+title: "Integrating Blockchain and IoT Systems — A Systematic Review"
+description: "Paper page for Tran, Babar & Boan (2021), JNCA Vol. 173, Article 102844."
+author: "Nguyen Khoi Tran, M. Ali Babar, Jonathan Boan"
+
+# Deployment
+baseurl: "/webpage-jnca-bc-iot-slr"
+url: "https://nguyentran0212.github.io"
+
+# Markdown engine
+markdown: kramdown
+highlighter: rouge
+
+# Plugins (none for now — keep it simple)
+plugins: []
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
