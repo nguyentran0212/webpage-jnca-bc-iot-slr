@@ -46,10 +46,10 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
     <p>
       We systematically reviewed <strong>120 peer-reviewed studies</strong> on blockchain-enabled IoT
       systems and asked two questions: <em>why</em> do IoT systems integrate blockchain, and
-      <em>how</em> is the integration actually done? We extracted 17 features organised into a
-      multi-perspective framework, then synthesised the findings into
-      <strong>10 archetypes</strong> that capture the recurring patterns of blockchain-IoT integration
-      — useful for classifying existing systems and guiding new ones.
+      <em>how</em> is the integration actually done? We extracted 17 features, organised them into a
+      multi-perspective framework, and synthesised the findings into
+      <strong>10 archetypes</strong> that capture the recurring patterns of blockchain-IoT
+      integration. We hope these archetypes will be useful for classifying existing systems and guiding new ones.
     </p>
   </div>
 </section>
@@ -82,12 +82,12 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
   <div class="container">
     <h2>Research method</h2>
     <p>
-      A four-phase Systematic Literature Review following Kitchenham et al.'s protocol:
-      (1) structured query across Scopus, IEEE Xplore, and ACM Digital Library;
+      We ran a four-phase Systematic Literature Review following Kitchenham et al.'s protocol:
+      (1) a structured query across Scopus, IEEE Xplore, and ACM Digital Library;
       (2) coarse-grained selection on titles and abstracts; (3) fine-grained selection on full
-      text; (4) quality filtering. Cross-validation among the authors reduced selection bias;
-      automation (Python de-duplication, prototype selection algorithm) reduced human
-      involvement. Literature identification concluded in January 2020.
+      text; and (4) quality filtering. We cross-validated among the authors to reduce selection bias,
+      and automated the parts that didn't need human judgement (Python de-duplication, prototype
+      selection algorithm). Literature identification concluded in January 2020.
     </p>
     <figure class="figure">
       <img src="{{ '/assets/figures/SLR_overview.png' | relative_url }}" alt="Overview of the SLR research questions, review process, and key findings">
@@ -102,14 +102,14 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
   <div class="container">
     <h2>Multi-perspective framework</h2>
     <p>
-      BC-IoT systems are complex — they carry decisions, trade-offs, and technical debt from
+      BC-IoT systems are complex. They carry decisions, trade-offs, and technical debt from
       both sides. To capture this, we organise the 17 extraction features around four angles:
     </p>
     <ul class="framework-list">
-      <li><strong>Why</strong> — improvement objectives (quality attributes, new functionality) and technical problems driving the integration.</li>
-      <li><strong>How (IoT side)</strong> — where BC fits (logical and physical position) and what IoT systems offload to BC (on-chain / off-chain data and logic).</li>
-      <li><strong>How (BC side)</strong> — configuration of the integrated BC networks: number, permission model, consensus protocol, development platform.</li>
-      <li><strong>Optimisation</strong> — how BC was tuned to fit IoT's resource, throughput, and off-chain-verification constraints.</li>
+      <li><strong>Why</strong>: improvement objectives (quality attributes, new functionality) and the technical problems driving the integration.</li>
+      <li><strong>How (IoT side)</strong>: where BC fits (logical and physical position) and what IoT systems offload to BC (on-chain and off-chain data and logic).</li>
+      <li><strong>How (BC side)</strong>: the configuration of the integrated BC networks, including number, permission model, consensus protocol, and development platform.</li>
+      <li><strong>Optimisation</strong>: how BC was tuned to fit IoT's resource, throughput, and off-chain-verification constraints.</li>
     </ul>
     <figure class="figure">
       <img src="{{ '/assets/figures/framework.png' | relative_url }}" alt="The multi-perspective framework for analysing BC-IoT systems">
@@ -123,7 +123,7 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
 <section class="section section--alt">
   <div class="container">
     <h2>What the literature is actually doing</h2>
-    <p>A small sample of the numbers we extracted across the 120 studies:</p>
+    <p>Here are some of the numbers we extracted from the 120 studies.</p>
 
     <div class="finding">
       <h3>Top improvement objectives</h3>
@@ -161,8 +161,8 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
   <div class="container">
     <h2>The 10 archetypes</h2>
     <p>
-      Patterns distilled from the literature. Most real BC-IoT systems combine multiple
-      archetypes and adapt them to their context — these are the templates they draw from.
+      We distilled these patterns from the literature. Most real BC-IoT systems combine multiple
+      archetypes and adapt them to their context. These are the templates they draw from.
     </p>
 
     <div class="archetypes-grid">
@@ -181,7 +181,7 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
       <div class="archetype">
         <div class="archetype-num">03</div>
         <h3>Access control manager</h3>
-        <p>Decentralised access control for incoming and outgoing requests of IoT devices, data, and services — including collaborative whitelisting.</p>
+        <p>Decentralised access control for incoming and outgoing requests of IoT devices, data, and services, including collaborative whitelisting.</p>
       </div>
 
       <div class="archetype">
@@ -193,7 +193,7 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
       <div class="archetype">
         <div class="archetype-num">05</div>
         <h3>Trust rating manager</h3>
-        <p>Secure storage and update of trust / reputation ratings of participants in IoT systems.</p>
+        <p>Secure storage and update of trust and reputation ratings of participants in IoT systems.</p>
       </div>
 
       <div class="archetype">
@@ -211,7 +211,7 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
       <div class="archetype">
         <div class="archetype-num">08</div>
         <h3>Inter-system communication channel</h3>
-        <p>Secure shared storage linking devices in different trust domains — e.g. distributed agents in collaborative DDoS detection.</p>
+        <p>Secure shared storage linking devices in different trust domains (for example, distributed agents in collaborative DDoS detection).</p>
       </div>
 
       <div class="archetype">
@@ -223,7 +223,7 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
       <div class="archetype">
         <div class="archetype-num">10</div>
         <h3>Secure computing platform</h3>
-        <p>Leverages smart-contract execution to build a trusted computing substrate on top of mutually distrustful IoT nodes.</p>
+        <p>Uses smart contracts to run trusted computations across the network's mutually distrustful IoT nodes.</p>
       </div>
     </div>
   </div>
@@ -233,27 +233,27 @@ description: "An inductive systematic review of 120 peer-reviewed blockchain-IoT
   <div class="container">
     <h2>Abstract</h2>
     <p>
-      Recent years have witnessed the emergence of the Internet of Things (IoT) systems that incorporate
-      blockchain (BC) elements in their architecture. Due to discrepancies between the requirements of IoT
-      systems and the characteristics of BC networks, the motivations and design of these blockchain-enabled
-      IoT systems (BC-IoT) are not only intriguing from a research perspective but also invaluable in
-      practice. This paper presents an inductive study of the "why" and "how" of BC-IoT systems through a
-      Systematic Literature Review of 120 peer-reviewed studies. To capture the diverse nature of BC-IoT
-      integration, we proposed and applied a multi-perspective framework to analyse the existing systems.
-      Regarding their motivations, we studied the improvement objectives and the technical problems that drive
-      the integration of BC. Regarding the design, we captured the position of BC within IoT systems as
-      well as the content and processes that IoT systems offload to BC. As these dimensions are not
-      mutually exclusive, they constitute a rich and multi-angle view of BC-IoT integration. Based on
-      these findings, we defined 10 archetypes of BC-IoT systems that embody the core patterns of usage
-      and configuration of BC in IoT systems.
+      We have witnessed the emergence of the Internet of Things (IoT) systems that incorporate
+      blockchain (BC) elements in their architecture. Discrepancies between the requirements of IoT
+      systems and the characteristics of BC networks mean that the motivations and design of these
+      blockchain-enabled IoT systems (BC-IoT) are not only intriguing from a research perspective
+      but also invaluable in practice. In this paper we present an inductive study of the "why" and
+      "how" of BC-IoT systems through a Systematic Literature Review of 120 peer-reviewed studies.
+      To capture the diverse nature of BC-IoT integration, we proposed and applied a
+      multi-perspective framework to analyse the existing systems. Regarding their motivations, we
+      studied the improvement objectives and the technical problems that drive the integration of BC.
+      Regarding the design, we captured the position of BC within IoT systems as well as the content
+      and processes that IoT systems offload to BC. As these dimensions are not mutually exclusive,
+      they constitute a rich and multi-angle view of BC-IoT integration. Based on these findings, we
+      defined 10 archetypes of BC-IoT systems that embody the core patterns of usage and configuration
+      of BC in IoT systems.
     </p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <h2>Cite this paper</h2>
-    <p>BibTeX entry (metadata sourced from <a href="https://api.crossref.org/works/10.1016/j.jnca.2020.102844" rel="noopener">Crossref</a>):</p>
+    <h2>BibTeX</h2>
     <pre class="bibtex"><code>@article{Tran2021bc_iot_slr,
   author    = {Tran, Nguyen Khoi and Babar, M. Ali and Boan, Jonathan},
   title     = {Integrating Blockchain and Internet of Things Systems:
